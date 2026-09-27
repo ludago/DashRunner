@@ -114,8 +114,8 @@ DashRunner/
 ### Run locally
 
 ```bash
-git clone https://github.com/ludago/croac-crossing.git
-cd croac-crossing/juegos_dev/DashRunner
+git clone https://github.com/ludago/dash-runner.git
+cd dash-runner
 
 # Open in Godot 4 and press F5 (or ▶ Play)
 ```
