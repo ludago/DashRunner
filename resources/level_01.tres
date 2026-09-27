@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="LevelData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://resources/level_data.gd" id="1_leveldata"]
+
+[resource]
+script = ExtResource("1_leveldata")
+chapter_number = 1
+chapter_title = "El Valle Celeste"
+narrative = "Todo empieza con un cielo tranquilo.\nDash se despide de su nido y arranca\nla carrera contra el tiempo."
+speed_base = 400.0
+speed_increase_rate = 8.0
+spawn_min = 1.0
+spawn_max = 2.2
+background_color = Color(0.529412, 0.811765, 0.921569, 1)
+ground_color = Color(0.55, 0.35, 0.2, 1)
+uses_background_art = true
+obstacle_types = Array[int]([0, 1, 2, 3])
+obstacle_weights = Array[int]([100, 30, 20, 15])
+obstacle_min_scores = Array[int]([0, 500, 1000, 1500])
+is_story_chapter = false
+target_score = 0

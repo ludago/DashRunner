@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="LevelData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://resources/level_data.gd" id="1_leveldata"]
+
+[resource]
+script = ExtResource("1_leveldata")
+chapter_number = 4
+chapter_title = "El Desierto Ardiente"
+narrative = "El sol pega fuerte, pero el calor no es nada\ncomparado con la nube negra que ya se ve\nen el horizonte."
+speed_base = 500.0
+speed_increase_rate = 9.5
+spawn_min = 0.85
+spawn_max = 1.9
+background_color = Color(0.909804, 0.580392, 0.290196, 1)
+ground_color = Color(0.76, 0.6, 0.32, 1)
+uses_background_art = false
+obstacle_types = Array[int]([0, 1, 2, 3, 4, 6, 7])
+obstacle_weights = Array[int]([65, 20, 16, 12, 32, 30, 18])
+obstacle_min_scores = Array[int]([0, 150, 400, 700, 100, 250, 600])
+is_story_chapter = false
+target_score = 0

@@ -1,0 +1,59 @@
+# Godot
+.godot/
+# NOTA: los *.uid SÍ se versionan. Desde Godot 4.3 son parte del proyecto:
+# las escenas referencian los scripts por uid:// y si no se commitean, un
+# clone nuevo regenera UIDs distintos y quedan rotas todas las referencias.
+*.translation
+*.cfg.bak
+
+# Build outputs
+build/
+*.exe
+*.apk
+*.aab
+*.pck
+*.zip
+*.wasm
+*.js
+*.html
+*.data
+
+# Keystores / Signing (NUNCA subir a repositorios)
+*.keystore
+*.jks
+*.p12
+*.pfx
+keystore.properties
+signing.properties
+
+# Logs
+error_log.txt
+*.log
+godot.log
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Godot 4 specific
+*.tscn.backup
+*.tres.backup
+*.gd.backup
+
+# Mono / C# (si usas .NET)
+mono/
+*.csproj
+*.sln
+obj/
+bin/
+
+# Temp
+tmp/
+temp/
+*.tmp

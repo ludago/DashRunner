@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="LevelData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://resources/level_data.gd" id="1_leveldata"]
+
+[resource]
+script = ExtResource("1_leveldata")
+chapter_number = 2
+chapter_title = "El Bosque de los Ecos"
+narrative = "Los árboles se cierran sobre el camino.\nAlgo revolotea entre las ramas: los primeros\npájaros asustados por el viento que se acerca."
+speed_base = 430.0
+speed_increase_rate = 8.5
+spawn_min = 0.95
+spawn_max = 2.1
+background_color = Color(0.239216, 0.352941, 0.294118, 1)
+ground_color = Color(0.28, 0.22, 0.12, 1)
+uses_background_art = false
+obstacle_types = Array[int]([0, 1, 2, 3, 4])
+obstacle_weights = Array[int]([80, 25, 20, 15, 40])
+obstacle_min_scores = Array[int]([0, 300, 600, 900, 200])
+is_story_chapter = false
+target_score = 0

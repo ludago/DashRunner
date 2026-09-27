@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="LevelData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://resources/level_data.gd" id="1_leveldata"]
+
+[resource]
+script = ExtResource("1_leveldata")
+chapter_number = 7
+chapter_title = "El Faro de Vuelo"
+narrative = "Dash llega al Faro justo a tiempo y enciende\nla señal. Toda la bandada alza vuelo detrás\nde ella, justo antes de que la tormenta\ncubra el valle."
+speed_base = 550.0
+speed_increase_rate = 7.0
+spawn_min = 0.75
+spawn_max = 1.7
+background_color = Color(0.968627, 0.796078, 0.529412, 1)
+ground_color = Color(0.6, 0.45, 0.3, 1)
+uses_background_art = false
+obstacle_types = Array[int]([0, 1, 2, 3, 4, 5, 6, 7, 8])
+obstacle_weights = Array[int]([60, 18, 15, 12, 30, 28, 28, 18, 26])
+obstacle_min_scores = Array[int]([0, 0, 0, 0, 0, 0, 0, 0, 0])
+is_story_chapter = true
+target_score = 6000

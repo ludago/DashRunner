@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="LevelData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://resources/level_data.gd" id="1_leveldata"]
+
+[resource]
+script = ExtResource("1_leveldata")
+chapter_number = 5
+chapter_title = "Las Montañas Heladas"
+narrative = "El aire se enfría de golpe.\nLa tormenta está tan cerca que ya nieva."
+speed_base = 530.0
+speed_increase_rate = 10.0
+spawn_min = 0.8
+spawn_max = 1.8
+background_color = Color(0.721569, 0.831373, 0.909804, 1)
+ground_color = Color(0.85, 0.9, 0.95, 1)
+uses_background_art = false
+obstacle_types = Array[int]([0, 1, 2, 3, 6, 8])
+obstacle_weights = Array[int]([60, 18, 15, 12, 28, 26])
+obstacle_min_scores = Array[int]([0, 120, 350, 600, 200, 100])
+is_story_chapter = false
+target_score = 0

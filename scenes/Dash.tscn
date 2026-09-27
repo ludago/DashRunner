@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://dashrunner01"]
+
+[ext_resource type="Script" uid="uid://chqepddh7hv4n" path="res://scripts/Dash.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://sg7aq3vcg42x" path="res://assets/dash.png" id="2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dash"]
+size = Vector2(40, 60)
+
+[node name="Dash" type="CharacterBody2D" groups=["player"]]
+script = ExtResource("1")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+position = Vector2(3, -50)
+scale = Vector2(0.28, 0.28)
+texture = ExtResource("2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -30)
+shape = SubResource("RectangleShape2D_dash")

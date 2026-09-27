@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="LevelData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://resources/level_data.gd" id="1_leveldata"]
+
+[resource]
+script = ExtResource("1_leveldata")
+chapter_number = 3
+chapter_title = "El Cañón del Eco"
+narrative = "El camino se estrecha entre paredes de piedra.\nEl eco del viento suena cada vez más parecido\na un trueno."
+speed_base = 460.0
+speed_increase_rate = 9.0
+spawn_min = 0.9
+spawn_max = 2.0
+background_color = Color(0.541176, 0.541176, 0.541176, 1)
+ground_color = Color(0.4, 0.36, 0.32, 1)
+uses_background_art = false
+obstacle_types = Array[int]([0, 1, 2, 3, 4, 5])
+obstacle_weights = Array[int]([70, 22, 18, 14, 35, 30])
+obstacle_min_scores = Array[int]([0, 200, 500, 800, 150, 400])
+is_story_chapter = false
+target_score = 0
