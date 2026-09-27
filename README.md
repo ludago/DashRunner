@@ -166,6 +166,7 @@ Flat **vector** illustration style, chosen to match the existing gradient backgr
 ## 📜 License
 
 MIT License — free to use, modify and distribute.
+See [LICENSE](LICENSE) for details.
 
 ---
 
