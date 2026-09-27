@@ -1,0 +1,45 @@
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  godot-tests:
+    name: Godot 4.4.1 headless
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Instalar Godot
+        uses: chickensoft-games/setup-godot@v2
+        with:
+          version: 4.4.1
+          use-dotnet: false
+          include-templates: false
+
+      - name: Importar assets
+        # La primera pasada genera los .import de las imagenes; sin esto las
+        # escenas que usan texturas avisan que no las encuentra.
+        run: godot --headless --import
+
+      - name: "Test - los 7 capitulos cargan"
+        run: godot --headless --quit-after 300 res://tests/test_niveles.tscn
+
+      - name: "Test - Game y el spawner leen el LevelData"
+        run: godot --headless --quit-after 400 res://tests/test_game_lectura.tscn
+
+      - name: "Smoke test - todas las escenas cargan"
+        run: |
+          for escena in Menu ChapterSelect ChapterIntro Game GameOver; do
+            echo "--- $escena ---"
+            godot --headless --quit-after 120 "res://scenes/$escena.tscn" 2>&1 | tee "/tmp/$escena.log"
+            if grep -E "SCRIPT ERROR|Parse Error|Failed to load|Invalid call" "/tmp/$escena.log"; then
+              echo "::error::La escena $escena tiene errores"
+              exit 1
+            fi
+          done

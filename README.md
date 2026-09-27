@@ -3,6 +3,7 @@
 > An **endless runner** built with **Godot 4.4** — a bird on a journey that starts calm and ends in a storm.
 
 ![Godot](https://img.shields.io/badge/Godot-4.4-478CBF?logo=godotengine&logoColor=white)
+![Tests](https://github.com/ludago/DashRunner/actions/workflows/ci.yml/badge.svg)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Language](https://img.shields.io/badge/Language-GDScript-blue)
 ![Status](https://img.shields.io/badge/Status-Work%20in%20progress-orange)
